@@ -12,10 +12,15 @@ public class QuanLySinhVien {
 		if("".equals(maSV))
 			return false;
 		
-		return dsSinhVien.remove(timIndex(maSV));
+		if(timIndex(maSV) < 0)
+			return false;
+		
+		dsSinhVien.remove(timIndex(maSV));
+		return true;
 	}
 	
 	private int timIndex(String maSV) {
+		// return -1 nếu maSV không có trong danh sách
 		int index = -1;
 		
 		for (SinhVien sinhVien : dsSinhVien) {

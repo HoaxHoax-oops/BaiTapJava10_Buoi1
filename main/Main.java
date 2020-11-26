@@ -14,6 +14,9 @@ public class Main {
 		quanLySinhVien.themSinhVien(new SinhVien("Quân", "MS05", 7, 7, 9));
 		quanLySinhVien.themSinhVien(new SinhVien("Quân", "MS06", 7, 8, 9));
 		quanLySinhVien.xuatDanhSachSinhVien();
+		
+		quanLySinhVien.xoaSinhVien("");
+		quanLySinhVien.xuatDanhSachSinhVien();
 	}
 
 	private static void getDummyData(QuanLySinhVien quanLySinhVien) {
